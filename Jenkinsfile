@@ -45,7 +45,7 @@ pipeline {
         }
       }
     }
-     //tagging the image to jenkins pipeline build number
+     //tagging the dockerimage
      stage("TEST: Can tag image") {
        steps{
     tagImage([
