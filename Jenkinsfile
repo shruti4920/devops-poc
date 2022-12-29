@@ -45,7 +45,7 @@ pipeline {
         }
       }
     }
-     //tagging the image to jenkins build number
+     //tagging the image to jenkins job build number
      stage("TEST: Can tag image") {
        steps{
     tagImage([
