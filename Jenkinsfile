@@ -59,7 +59,7 @@ pipeline {
     ])
        }
 }
-      // triggering another jenkins job 
+      // triggering another jenkins job in repo
       stage("Trigger ManifestUpdate"){
         steps{
           build job:'updatemanifest' , parameters: [string(name: 'DOCKERTAG',value: env.BUILD_NUMBER)]
