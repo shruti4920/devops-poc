@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: java-sre-monitor
-          image: 'quay.io/vishwajitdandage/sre:java-1'
+          image: 'image-registry.openshift-image-registry.svc:5000/shruti-poc-devops/springboot-app:latest'
           ports:
             - containerPort: 3000
               protocol: TCP
